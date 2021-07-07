@@ -35,6 +35,10 @@ module.exports = {
       provider: () => new HDWalletProvider({mnemonic: {phrase: seedPhrase}, providerOrUrl: `${config.swissdlt.url}/`}),
       network_id: config.swissdlt.network_id,
     },
+    payfoot: {
+      provider: () => new HDWalletProvider({mnemonic: {phrase: seedPhrase}, providerOrUrl: `${config.payfoot.url}`}),
+      network_id: config.payfoot.network_id,
+    },
   },
 
   // Configure our compilers

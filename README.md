@@ -109,28 +109,13 @@ Go to the corresponding Etherscan link, e.g. https://rinkeby.etherscan.io/addres
 
 ## Test Deployments
 The smart contract [`SaentisGulden.sol`](https://gitlab.appswithlove.net/saentis-gulden/saentis-gulden-token-contract/-/blob/main/contracts/SaentisGulden.sol) has been deployed across all the major test networks:
-### Version 1 (Without `permit` Functionality)
-- **Rinkeby:** [0x9C61c3Cf3159aaDd6E432886ad333d6Da1D79Ab3](https://rinkeby.etherscan.io/address/0x9C61c3Cf3159aaDd6E432886ad333d6Da1D79Ab3)
-- **Ropsten:** [0x10c35227901F2D1D19067E7c5798CF745e360dBc](https://ropsten.etherscan.io/address/0x10c35227901F2D1D19067E7c5798CF745e360dBc)
-- **Kovan:** [0xE9A36ba0a07afDd1C6169Ae4e4E065E1095Cb6bE](https://kovan.etherscan.io/address/0xE9A36ba0a07afDd1C6169Ae4e4E065E1095Cb6bE)
-- **Goerli:** [0xE9A36ba0a07afDd1C6169Ae4e4E065E1095Cb6bE](https://goerli.etherscan.io/address/0xE9A36ba0a07afDd1C6169Ae4e4E065E1095Cb6bE)
+- **Rinkeby:** [0x12bd590D921D3936Db75BA60FaAE1F6A2E495b46](https://rinkeby.etherscan.io/address/0x12bd590d921d3936db75ba60faae1f6a2e495b46)
+- **Ropsten:** [TBD](TBD)
+- **Kovan:** [TBD](TBD)
+- **Goerli:** [TBD](TBD)
 
-### Version 2 (With `permit` Functionality)
-- **Rinkeby:** [0x0f64069aC10c5Bcc3396b26C892A36D22CdCf5A6](https://rinkeby.etherscan.io/address/0x0f64069aC10c5Bcc3396b26C892A36D22CdCf5A6)
-- **Ropsten:** [0x9b8D4cae1277a1FB56Af4C502A28B75C935f4ff3](https://ropsten.etherscan.io/address/0x9b8D4cae1277a1FB56Af4C502A28B75C935f4ff3)
-- **Kovan:** [0x95Ae9Af89643a60DE620727CEd783FAF609832d6](https://kovan.etherscan.io/address/0x95Ae9Af89643a60DE620727CEd783FAF609832d6)
-- **Goerli:** [0x8749A22918430fc598B3F48E04625B371B567F0c](https://goerli.etherscan.io/address/0x8749A22918430fc598B3F48E04625B371B567F0c)
-
-## Production Deployments on SwissDLT
+## Production Deployments on PayFoot
 The smart contract [`SaentisGulden.sol`](https://gitlab.appswithlove.net/saentis-gulden/saentis-gulden-token-contract/-/blob/main/contracts/SaentisGulden.sol) has been deployed to the SwissDLT network with [Remix<sup>*</sup> ](http://remix.ethereum.org) and signed with the Säntis Gulden hardware wallet (Ledger Nano S):
-### Version 1 (Without `permit` Functionality)
-- [SwissDLT Block Explorer](https://swissdlt.appswithlove.net)
-- Contract creation transaction hash: [0x857f538e8476cebc7d5b22863c30494e713bf05cb09aac005d69fdff79e606cd](https://swissdlt.appswithlove.net/tx/0x857f538e8476cebc7d5b22863c30494e713bf05cb09aac005d69fdff79e606cd)
-- **Contract address:** [0x263DC7587aBE19595f7d7db378EE7aC2A773CF69](https://swissdlt.appswithlove.net/address/0x263DC7587aBE19595f7d7db378EE7aC2A773CF69)
-- **Contract admin:** [0x7de729bc151084C3F455Dbc03E7842919565D23e](https://swissdlt.appswithlove.net/address/0x7de729bc151084C3F455Dbc03E7842919565D23e)
-- Contract Application Binary Interface (ABI): Can be downloaded from the [snippet](https://gitlab.appswithlove.net/saentis-gulden/saentis-gulden-token-contract/-/snippets/12). This file was copied from Remix after compilation.
-
-### Version 2 (With `permit` Functionality)
 - [SwissDLT Block Explorer](https://swissdlt.appswithlove.net)
 - Contract creation transaction hash: TBD
 - **Contract address:** TBD
@@ -141,18 +126,11 @@ The smart contract [`SaentisGulden.sol`](https://gitlab.appswithlove.net/saentis
 > **Note 2:** Remix uses checksummed addresses for the `At Address` button and if it's invalid the button is disabled. Always use checksummed addresses with Remix! One way to handle this is by using [EthSum](https://ethsum.netlify.app). The checksum algorithm is laid out in full detail [here](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-55.md). 
 
 <sup>*</sup> Remix deployment configuration:
-- **Version 1 (Without `permit` Functionality)**
-  - Compiler: `0.8.0+commit.c7dfd78e`;
-  - Language: `Solidity`;
-  - EVM Version: `compiler default`;
-  - Enable optimization: `200`;
-  - Only the smart contract [`SaentisGulden.sol`](https://gitlab.appswithlove.net/saentis-gulden/saentis-gulden-token-contract/-/blob/main/contracts/SaentisGulden.sol) was used for compilation and deployment. Remix imported the dependencies successfully (see [here](https://remix-ide.readthedocs.io/en/latest/import.html) how this works in the background with the `.deps` folder);
-- **Version 2 (With `permit` Functionality)**
-  - Compiler: `0.8.6+commit.11564f7e`;
-  - Language: `Solidity`;
-  - EVM Version: `compiler default`;
-  - Enable optimization: `200`;
-  - Only the smart contract [`SaentisGulden.sol`](https://gitlab.appswithlove.net/saentis-gulden/saentis-gulden-token-contract/-/blob/main/contracts/SaentisGulden.sol) was used for compilation and deployment. Remix imported the dependencies successfully (see [here](https://remix-ide.readthedocs.io/en/latest/import.html) how this works in the background with the `.deps` folder);
+- Compiler: `0.8.0+commit.c7dfd78e`;
+- Language: `Solidity`;
+- EVM Version: `compiler default`;
+- Enable optimization: `200`;
+- Only the smart contract [`SaentisGulden.sol`](https://gitlab.appswithlove.net/saentis-gulden/saentis-gulden-token-contract/-/blob/main/contracts/SaentisGulden.sol) was used for compilation and deployment. Remix imported the dependencies successfully (see [here](https://remix-ide.readthedocs.io/en/latest/import.html) how this works in the background with the `.deps` folder);
 
 ## Further References
 [1] https://docs.openzeppelin.com/contracts/4.x/erc20

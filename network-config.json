@@ -28,5 +28,9 @@
     "swissdlt": {
         "url": "https://swissdlt.appswithlove.net/rpc",
         "network_id": 999
+    },
+    "payfoot": {
+        "url": "https://rpc.payfoot.org",
+        "network_id": 888
     }
 }
