@@ -40,13 +40,13 @@
         "network_id": 5
     },
     "payfoot": {
-        "verifyingContract": "TBD",
+        "verifyingContract": "0x1C90008B345fA5BEf50d6AB617A1BB91cf51c41d",
         "spenderAddress": "0x9F3f11d72d96910df008Cfe3aBA40F361D2EED03",
         "deadline": 1909147011,
         "name": "PayFoot",
         "symbol": "PFT",
         "version": "1",
-        "domainSeperator": "TBD",
+        "domainSeperator": "0x1ddb067447db90ac8d6c2bfec22aa04c0ebfb75e1b4b2fedcbf286ea302c544b",
         "network_id": 888
     }
 }

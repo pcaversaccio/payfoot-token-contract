@@ -115,9 +115,9 @@ The smart contract [`PayFoot.sol`](https://gitlab.appswithlove.net/payfoot/payfo
 
 ## Production Deployments on PayFoot
 The smart contract [`PayFoot.sol`](https://gitlab.appswithlove.net/payfoot/payfoot-token-contract/-/blob/main/contracts/PayFoot.sol) has been deployed to the PayFoot network with [Remix<sup>*</sup> ](http://remix.ethereum.org) and signed with the PayFoot hardware wallet (Ledger Nano S):
-- Contract creation transaction hash: TBD
-- **Contract address:** TBD
-- **Contract admin:** TBD
+- Contract creation transaction hash: [0x92e3aace3921e07d6a133f90ad1425ecc256ba5ad7a8964eeacf73d04407b9fc](https://expedition.dev/tx/0x92e3aace3921e07d6a133f90ad1425ecc256ba5ad7a8964eeacf73d04407b9fc?network=PayFoot)
+- **Contract address:** [0x1C90008B345fA5BEf50d6AB617A1BB91cf51c41d](https://expedition.dev/address/0x1C90008B345fA5BEf50d6AB617A1BB91cf51c41d?network=PayFoot)
+- **Contract admin:** [0x5D47fBF83EE223AfFA58fdd5EF61877c067c7390](https://expedition.dev/address/0x5D47fBF83EE223AfFA58fdd5EF61877c067c7390?network=PayFoot)
 - Contract Application Binary Interface (ABI): Can be downloaded from the [snippet](https://gitlab.appswithlove.net/payfoot/payfoot-token-contract/-/snippets/17). This file was copied from Remix after compilation.
 > **Note 1:** Make sure that you always copy the full smart contract ABI and not just one of the inherited interfaces!
 
